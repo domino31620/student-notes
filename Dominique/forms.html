@@ -31,22 +31,40 @@
 			<label for="qty">How many people would you like abducted?</label>
 			<input type="number" id="qty" name="qty" min="1" max="10">
 			<p>What type of UFO do you prefer?</p>
-				<ul>
-					<li>Classic oval UFO</li>
-					<li>Star Wars-style Imperial cruiser</li>
-					<li>Battlestar Galactica-style Viper</li>
-					<li>Borg-style cube</li>
+				<label>
+			<input type="radio" name="ufotype" value="classic" checked>Classic oval UFO
+				</label>
+				<label>
+					<input type="radio" name="ufotype" value="starwars">
+					Star Wars-style Imperial cruiser
+				</label>
+				<label>
+					<input type="radio" name="ufotype" value="viper">
+					Battlestar Galactica-style Viper
+				</label>
+				<label>
+					<input type="radio" name="ufotype" value="borg">
+					Borg-style cube
+				</label>
 				</ul> 
-			<p>What type of abduction experience do you want?</p>
-				<ul>
-					<li>Tour of the solar system</li>
-					<li>Alien dinner and discussion</li>
-					<li>Alien dance lessons</li>
-					<li>Whale watching</li>
-				</ul>
+			<label for="abtype">What type of abduction experience do you want?
+
+			</label>
+			<select id="abtype" name="abtype">
+
+				<option selected> Select One...</option>
+					<option value="tour">Tour of the solar system</option>
+
+					<option value="dinner">Alien dinner and discussion</option>
+
+					<option value="dance">Alien dance lessons</option>
+
+					<option value="whales">Whale watching</option>
+
+				</select>
 			</fieldset>
 			<p>Special requests:</p>
-			<p>Add me to your email list</p>\
+			<p>Add me to your email list</p>
 		</form>				
 		</section>
 		<aside>
@@ -85,4 +103,19 @@ Fieldset is good way to break up your firm into manageable chunks. It helps to u
 Input can be used with a date tag.
 * Fairly new so it may not be supported by some browsers
 Input can have an attribute for minimum and maximum for numbers
+ -->
+
+ <!-- Notes 6/24
+
+Radio buttons — suitable for a single choice among a few options. There should be at least two choices.
+Attributes:
+Name 
+* always the same for ALL radio buttons in a group — identifies the choices for a single response
+Value
+* unique for each radio button — what is this choice?
+Checked
+* start the form with this value pre-selected
+It's always good to back and click your radio buttons to make sure only one is clickable at a time. If more than one can be selected then you need to check your name attribute. 
+
+You cannot have 2 name value attributes
  -->
